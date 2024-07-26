@@ -42,7 +42,7 @@ RackSpace which introduced insects. This term was introduced to describe serverl
 As you’d expect, insects have a much lower life expectancy than chickens; in fact, some insects only have a lifespan of a
 few hours. Fitting in well with serverless and Functions as a Service as these have a lifespan of seconds.
 
-The farm or animal analogy starts to break down with [Marin Fowler’s post](https://martinfowler.com/bliki/SnowflakeServer.html) about
+The farm or animal analogy starts to break down with [Martin Fowler’s post](https://martinfowler.com/bliki/SnowflakeServer.html) about
 Snowflakes representing highly delicate, detailed server deployments.  But hopefully you get the point. 
 
 ## Putting Cattle, not Pets to Practical Use
