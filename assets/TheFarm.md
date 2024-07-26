@@ -13,7 +13,7 @@ of modern cloud infrastructures.
 The best I can tell a Microsoft engineer, Bill Baker, used it during a discussion about SQL deployments to explain how server 
 treatment changed over time while discussing scale-up v scale-out infrastructure deployments. 
 
-![Thank you Copado for PetsVCattle image](../images/PetsVCattle.jpg)
+![Thank you Copado for PetsVCattle image](../images/PetsVCattle.jpg "Thank you Copado for image")
 
 While the treatment of pets sounds more positive, it’s the cattle approach developers need to target, the automation
 of scale-out architectures.   In the early days of cloud deployments, it was mostly about infrastructure, but adapting
