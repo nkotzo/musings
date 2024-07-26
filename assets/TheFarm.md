@@ -17,15 +17,14 @@ treatment changed over time while discussing scale-up v scale-out infrastructure
 
 While the treatment of pets sounds more positive, it’s the cattle approach developers need to target, the automation
 of scale-out architectures.   In the early days of cloud deployments, it was mostly about infrastructure, but adapting
-to modern agile processes its a requirement for DevOps, DevSecOps, Platform Engineering, etc. that are driving todays
-feature deployments.   That’s not to say the cattle approach will work all the time, there are exceptions to every rule.
-But they should be exceptions, and, not the rule.  “Not everything is disposable, and when an asset isn’t, it requires
+to the modern agile processes of today its become a requirement for DevOps, DevSecOps, Platform Engineering, etc. that 
+are driving todays feature deployments.   That’s not to say the cattle approach will work all the time, there are exceptions to every rule. But they should be exceptions, and, not the rule.  “Not everything is disposable, and when an asset isn’t, it requires
 pet treatment. The goal is to minimize the number of pets and maximize cattle to create an easy to protect and manage
 infrastructure.”
 
 ## Extending the farm, Additions to the “Cattle, not Pets” Analogy
 What about Containers?   In a [Bernard Golden post](https://thenewstack.io/pets-and-cattle-symbolize-servers-so-what-does-that-make-containers-chickens/) 
-he used chickens to describe container environment.  “Chickens grow to maturity much faster than cattle — six weeks for
+he used chickens to describe the container environment.  “Chickens grow to maturity much faster than cattle — six weeks for
 a chicken compared to around 24 months for cattle. They’re more efficient than cattle in terms of resource use — a chicken
 only takes 1.7 pounds of food to add a pound of mass, while a steer requires over three pounds”
 
@@ -59,7 +58,7 @@ good old days, operation teams would apply these patches or upgrades in-place, o
 result in the servers drifting further away from ‘good’.   Immutable systems move this responsibility to the image creation
 process, and optimize for replacing the running image quickly, reducing the scope of change to a single, well defined and well
 tested image that can be deployed repeatedly, and often without interruption to ongoing operations. These systems and processes
-also cut configuration drift.  When systems drift from a known ‘good’ changes aren’t mapped effectively, making reproduction
+also cut down on configuration drift.  When systems drift from a known ‘good’ changes aren’t mapped effectively, making reproduction
 (or restoration) into a backup or secondary source near impossible.
 
 So how do we get to, and, manage immutable systems.  Infrastructure as code is a crucial component of building these immutable
