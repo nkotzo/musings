@@ -56,7 +56,7 @@ or patched. It’s replaced with a new server built from a standard image, with 
 
 Patches and updates are an unavoidable reality, they ensure the ongoing security and compliance of the infrastructure.  In the
 good old days, operation teams would apply these patches or upgrades in-place, often in a non-consistent fashion, which can
-result in the servers drifting further way from ‘good’.   Immutable systems move this responsibility to the image creation
+result in the servers drifting further away from ‘good’.   Immutable systems move this responsibility to the image creation
 process, and optimize for replacing the running image quickly, reducing the scope of change to a single, well defined and well
 tested image that can be deployed repeatedly, and often without interruption to ongoing operations. These systems and processes
 also cut configuration drift.  When systems drift from a known ‘good’ changes aren’t mapped effectively, making reproduction
@@ -64,7 +64,7 @@ also cut configuration drift.  When systems drift from a known ‘good’ change
 
 So how do we get to, and, manage immutable systems.  Infrastructure as code is a crucial component of building these immutable
 systems.  Establishing the IaC code base builds a foundation that helps deliver these rapidly configured, immutable, replacement
-servers.  By leveraging software development best practices, where changes are visible within the code its self, while pull
+servers.  By leveraging software development best practices, where changes are visible within the code itself, while pull
 requests and peer reviews help drive quality throughout the process.   Reducing your dependence on excessive or dated 
 documentation.
 
