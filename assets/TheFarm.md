@@ -1,3 +1,5 @@
+<img src="../images/cattle.jpg" width="500" height="300" />
+
 # The Farm:  "Cattle, not pets"
 Pets vs. cattle is an analogy that started hitting common vernacular at least for me in the mid-2010s, you’ll find hundreds of 
 developer memes with a simple Google search.  It’s an analogy to help you think about and deal with server infrastructure
