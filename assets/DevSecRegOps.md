@@ -1,4 +1,4 @@
-![DevSecRegOps Immage Header](../images/DevSecRegOpsImageHeadder.png)
+![DevSecRegOps Immage Header](../images/DevSecRegOpsImageHeader.png)
 
 ## DevSecRegOps:  What Does It All Mean?
 I’m sure we’ve all been there, feeling the frustration of hitting the ‘wall’ of compliance checks.  Traditional compliance, characterized by checklists, and, out-of-step audits, causes bottlenecks in processes, agility, and feature delivery.  Jan Varga, calls out some of the hidden costs to navigating compliance in a traditional and likely a manual way.
