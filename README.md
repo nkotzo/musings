@@ -7,3 +7,5 @@ you’re welcome here.
 
 ### Blogs
 [The Farm and Modern Infrastructure](/assets/TheFarm.md)
+
+[DevSecRegOps:  What does it all Mean?](/assets/DevSecRegOps.md)
