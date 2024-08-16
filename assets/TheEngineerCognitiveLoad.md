@@ -1,0 +1,26 @@
+# The Engineer:  Cognitive Load
+###### Platform Engineering Series
+
+#### Understanding Cognitive Load and How It Impacts Engineers
+
+> “The cognitive load involved in a task is the cognitive effort (or amount of information processing) required by a person to perform this task.” [(Reif, 2010)](https://my.chartered.college/impact_article/%20cognitive-load-theory-and-its-application-in-the-classroom/)
+
+In the fast-paced world of technology, engineers often find themselves juggling multiple tasks, solving complex problems, and continuously learning new skills. This constant mental juggling can lead to what is known as cognitive load. Understanding and managing cognitive load is crucial for engineers to maintain productivity, creativity, and overall well-being.  Cognitive load refers to the mental effort required to manage tasks, responsibilities, and information, it’s the invisible work that goes into keeping everything running smoothly, from remembering deadlines to managing multiple projects simultaneously.  It’s not about the physical act of doing something but the mental energy spent thinking about it.  For us engineers, mental load can be thought of in a couple of buckets or types:
+
+- **Intrinsic Load:** This is the inherent difficulty associated with a specific task. For example, learning a new programming language has a high intrinsic load due to its complexity.
+- **Extraneous Load:** This is the load imposed by the way information is presented. Poorly organized documentation or a cluttered user interface can increase extraneous load.  The sheer volume of information available can make it challenging to focus and find the relevant configuration parameter, API and documentation, etc.  The constant noise of notifications, the barrage from emails, messages, teams, slack and other applications can be overwhelming.  Not to mention the multitasking world most of us live in.  Juggling multiple tasks and projects (especially for those of you not firmly in a product centric / Agile world), in addition, switching between different applications in our delivery chain can drain mental resources.  Think about all the applications and configurations you work with in today’s standard pipeline. 
+- **Germane Load:** This is the mental effort required to process information and create new schemas. It is the productive cognitive load that contributes to learning and problem-solving.
+- **Decision Fatigue:** Making numerous decisions, from choosing the right software to managing project timelines, can lead to mental exhaustion.  We are asked 100 of questions a day.  How many points is this story?   Can we prioritize this feature before that one?  Can you help write clean code?
+
+#### The Impact of Cognitive Load on Engineers
+Not surprising high cognitive load can lead to several issues for engineers.  As you would expect *Decreased Productivity* would be at the top of the list.  When cognitive load is too high, it can slow down the ability to process information and make decisions.  In addition it will likely *Increase Errors* as a tired and overloading the brain can lead to mistakes.  And of course *Burnout* becomes a problem with continuously high cognitive load, the mental fatigue will reduce overall job satisfaction and performance.
+
+#### How to Reduce Mental Load in Technology
+As a way to reduce cognitive load, and in turn increase quality and reduce delivery times there has been a focus on improving “DevEx” (developer experience).   You might have seen rise of [“Golden Paths”](https://engineering.atspotify.com/2020/08/how-we-use-golden-paths-to-solve-fragmentation-in-our-software-ecosystem/) usage, with its aim to simplify (less choices with opinionated configurations), to make delivery safer, and faster, to get code into production and reduce cognitive load.  Reducing mental load is crucial for maintaining productivity and well-being.  Here are some strategies to help manage and reduce mental load in the tech-driven world:
+- **Simplify Tasks:** Break down complex tasks into smaller, manageable steps. This reduces intrinsic load and makes it easier to focus on one aspect at a time.
+- **Improve Documentation:** Ensure that documentation is clear, concise, and well-organized. This helps reduce extraneous load by making information easier to find and understand.
+- **Use Visual Aids:** Diagrams, flowcharts, and other visual tools can help engineers process information more efficiently, reducing cognitive load.
+- **Automate Repetitive Tasks:** Use automation tools to handle repetitive and mundane tasks, freeing up mental resources for more complex problem-solving.
+- **Continuous Learning:** Encourage a culture of continuous learning and skill development. This helps engineers build robust mental schemas, making it easier to handle complex tasks.
+
+This is where *DevEx, Platform Engineering,* and the *Developer Portal* have come onto the scene to help reduce the cognitive load with development and feature delivery.  These will be topics for future musings.  Managing cognitive load is essential for engineers in the technology sector.  As technology continues to evolve, staying mindful of cognitive load, building tools and frameworks will be key to sustaining long-term success and innovation in the field.
