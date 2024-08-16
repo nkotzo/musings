@@ -9,3 +9,5 @@ you’re welcome here.
 [The Farm and Modern Infrastructure](/assets/TheFarm.md)
 
 [DevSecRegOps:  What does it all Mean?](/assets/DevSecRegOps.md)
+
+[The Engineer:  Cognative Load](/assets/TheEngineerCognitiveLoad.md)
