@@ -10,7 +10,7 @@ Finding balance on a work project is an ongoing process that requires self-aware
 ### Set Clear Goals and Priorities
 Start by defining the project’s objectives and breaking them down into manageable tasks. Prioritize these tasks based on their importance and deadlines. This approach helps you stay focused on the outcome and avoid feeling overwhelmed.
 ### Communicate Effectively
-Maintain open lines of communication with your team and stakeholders and your team.  If you’re running an ‘agile’ team lean into the ceremonies and standups.  Regular updates and retros can prevent misunderstandings and ensure everyone is on the same page. 
+Maintain open lines of communication with your team, stakeholders and your team.  If you’re running an ‘agile’ team lean into the ceremonies and standups.  Regular updates and retros can prevent misunderstandings and ensure everyone is on the same page. 
 ### Set Boundaries
 Establish clear boundaries between work and personal life.  It’s easy for me to get caught up in solving the problem.  Finding that bug.  I have to pay attention to this one, especially when working from home.   This separation helps me maintain a healthy work-life balance, gives me time to build into my family and prevents burnout.
 ### Take Care of Your Health
