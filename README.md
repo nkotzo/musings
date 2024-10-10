@@ -11,3 +11,5 @@ you’re welcome here.
 [DevSecRegOps:  What does it all Mean?](/assets/DevSecRegOps.md)
 
 [The Engineer:  Cognative Load](/assets/TheEngineerCognitiveLoad.md)
+
+[The Engineer:  Balance](/assets/Balance.md)
