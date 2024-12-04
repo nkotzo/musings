@@ -13,3 +13,5 @@ you’re welcome here.
 [The Engineer:  Cognative Load](/assets/TheEngineerCognitiveLoad.md)
 
 [The Engineer:  Balance](/assets/Balance.md)
+
+[Living La Vida VUCA](/assests/LivingLaVidaVUCA.md)
