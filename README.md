@@ -14,4 +14,4 @@ you’re welcome here.
 
 [The Engineer:  Balance](/assets/Balance.md)
 
-[Living La Vida VUCA](/assests/LivingLaVidaVUCA.md)
+[Living La Vida VUCA](/assets/LivingLaVidaVUCA.md)
