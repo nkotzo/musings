@@ -15,3 +15,5 @@ you’re welcome here.
 [The Engineer:  Balance](/assets/Balance.md)
 
 [Living La Vida VUCA](/assets/LivingLaVidaVUCA.md)
+
+[Building High Perfroming Teams Through Psychological Safety](/assets/BuildingHighPerformingTeamsThroughPsychologicalSafty.md)
