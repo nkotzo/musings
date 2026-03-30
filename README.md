@@ -17,3 +17,5 @@ you’re welcome here.
 [Living La Vida VUCA](/assets/LivingLaVidaVUCA.md)
 
 [Building High Perfroming Teams Through Psychological Safety](/assets/BuildingHighPerformingTeamsThroughPsychologicalSafty.md)
+
+[Quality Closed Loop Systems](assets/QualityClosedLoopProcess.md)
