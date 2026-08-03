@@ -19,3 +19,5 @@ you’re welcome here.
 [Building High Perfroming Teams Through Psychological Safety](/assets/BuildingHighPerformingTeamsThroughPsychologicalSafty.md)
 
 [Quality Closed Loop Systems](assets/QualityClosedLoopProcess.md)
+
+[Non-Human Workforce](assets/NonHumanWorkforce.md)
