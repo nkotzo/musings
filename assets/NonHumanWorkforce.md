@@ -1,3 +1,5 @@
+![Non-Human Workforce Immage Header](../images/Non-HumanWorkforceImage.png)
+
 # Human–Agent Workforce: A Caring, Human-Centered Two-Part Blog
 AI isn't just transforming workflows - it's reshaping the very fabric of how people experience work. As digital agents take on routine tasks, humans inherit complexity, emotion, and judgment. This first part explores why traditional workforce models are breaking, how early‑career development must evolve, and what leaders need to understand to support a blended human–agent workforce with empathy and intention.
 
