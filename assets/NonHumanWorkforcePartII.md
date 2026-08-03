@@ -1,5 +1,5 @@
 # PART II: The Human Impact - Identity, Burnout, Trust, and the Future of Work
-Part I focused on structure, cost, and leadership. Part II focuses on people, the emotional, cultural, and psychological experience of working alongside non‑human teammates.
+[Part I focused on structure, cost, and leadership.](/assests/NonHumanWorkforce.md) Part II focuses on people, the emotional, cultural, and psychological experience of working alongside non‑human teammates.
 This is where the change becomes personal.
 When AI becomes a teammate, the human impact becomes impossible to ignore. Identity shifts, emotional load, invisible oversight work, and trust gaps all emerge in ways organizations rarely anticipate. This second part dives into the human side of the hybrid workforce, offering a compassionate framework for protecting well‑being, preserving meaning, and designing capacity models that honor the people who carry the emotional weight of automation.
 
