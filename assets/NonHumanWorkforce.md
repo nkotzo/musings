@@ -84,6 +84,7 @@ Bain & Company's research is clear that every digital worker needs a job descrip
 ## The Leadership Shift
 This is not "more leadership." It is different leadership - orchestration instead of supervision. Leaders must learn to manage a blended workforce where humans and digital teammates collaborate, escalate, and co‑produce outcomes. The organizations that master this shift will outperform those that treat AI as just another tool - and their people will feel supported rather than overwhelmed.
 
+We continue our exportation of [Non-Human Workfroce in Part II](../assets/NonHumanWorkforcePartII.md)
 
 ## References 
 - McKinsey - The Agentic Organization: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
