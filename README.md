@@ -21,3 +21,5 @@ you’re welcome here.
 [Quality Closed Loop Systems](assets/QualityClosedLoopProcess.md)
 
 [Non-Human Workforce](assets/NonHumanWorkforce.md)
+
+[Non-Human Workforce Part II](assets/NonHumanWorkforceII.md)
