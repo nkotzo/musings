@@ -5,15 +5,6 @@ Beyond the immediate technology implications of this AI wave, I find myself thin
 Historically, enterprise architecture and corporate security models have operated on a clean, tripartite structure: we focused on governing people, applications, and infrastructure. People possessed identities; applications consisted of static, predictable code; infrastructure formed the network boundaries connecting them. 
 
 ![Traditional IT Governance v Agentic Reality](./images/AgenticReality.png)
-```text
-   Traditional IT Governance             The Agentic Reality
-┌─────────────────────────────┐     ┌─────────────────────────────┐
-│    PEOPLE   │  APPLICATIONS │     │         AI AGENTS           │
-│ (Identities)│    (Code)     │ ──> │ (Probabilistic Reasoning,   │
-├─────────────┴───────────────┤     │  Autonomous Action, Scoped  │
-│        INFRASTRUCTURE       │     │  Credentials, Lateral Flow) │
-│          (Networks)         │     └─────────────────────────────┘
-```
 
 AI agents seem to sit somewhere in between all three, which is why I think the architecture, governance, and security implications are much bigger than the technology itself. When an autonomous entity triggers an API or mutates a database record based on its own internal prompting, it exercises a level of programmatic agency that bypasses traditional access boundaries [iProov Non-Human Identity Community Journal]. 
 
