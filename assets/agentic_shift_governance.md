@@ -4,7 +4,7 @@ Beyond the immediate technology implications of this AI wave, I find myself thin
 
 Historically, enterprise architecture and corporate security models have operated on a clean, tripartite structure: we focused on governing people, applications, and infrastructure. People possessed identities; applications consisted of static, predictable code; infrastructure formed the network boundaries connecting them. 
 
-![Traditional IT Governance v Agentic Reality](./images/AgenticReality.png)
+![Traditional IT Governance v Agentic Reality](../images/AgenticReality.png)
 
 AI agents seem to sit somewhere in between all three, which is why I think the architecture, governance, and security implications are much bigger than the technology itself. When an autonomous entity triggers an API or mutates a database record based on its own internal prompting, it exercises a level of programmatic agency that bypasses traditional access boundaries [iProov Non-Human Identity Community Journal]. 
 
@@ -45,19 +45,7 @@ This shift also forces us to rethink workforce planning and organizational desig
 
 Workforce planning must transition from human substitution to human-agent orchestration.
 
-```text
-    Siloed Workforce Structure                 Hybrid Orchestration Model
-┌──────────────────┐┌──────────────────┐     ┌────────────────────────────────────┐
-│   Human Teams    ││   AI Software    │     │ Human Manager (Context & Strategy) │
-│ (Manual Process) ││  (Static Tools)  │ ──> └─────────────────┬──────────────────┘
-└──────────────────┘└──────────────────┘                       │
-                                             ┌─────────────────┴──────────────────┐
-                                             ▼                                    ▼
-                                  ┌────────────────────┐       ┌────────────────────┐
-                                  │ Human Specialist   │ ◄───► │   AI Agent (NHI)   │
-                                  │ (Review/Auditing)  │       │ (Scale/Execution)  │
-                                  └────────────────────┘       └────────────────────┘
-```
+![Siloed Workforce v Hybrid Orchestration](../images/SiloedWorkforceVHybridOrchestration.png)
 
 Managers of modern "agile" teams must lean heavily into updated ceremonies, stands, and retros to manage these hybrid lifecycles smoothly [The Engineer: Finding Balance]. Human leaders will spend less time tracking daily task execution and more time serving as prompt and context architects, defining behavioral boundaries for their agent cohorts and auditing operational data logs. 
 
@@ -90,6 +78,9 @@ allow {
 ```
 
 #### Runtime Execution Interception Flow
+
+![Execution Interception Flow](../images/ExecutionFlow.png)
+
 ```text
    +-----------------------+
 
