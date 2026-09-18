@@ -6,30 +6,26 @@ Historically, enterprise architecture and corporate security models have operate
 
 ![Traditional IT Governance v Agentic Reality](../images/AgenticReality.png)
 
-AI agents seem to sit somewhere in between all three, which is why I think the architecture, governance, and security implications are much bigger than the technology itself. When an autonomous entity triggers an API or mutates a database record based on its own internal prompting, it exercises a level of programmatic agency that bypasses traditional access boundaries [iProov Non-Human Identity Community Journal]. 
+AI agents seem to sit somewhere in between all three, which is why I think the architecture, governance, and security implications are much bigger than the technology itself. When an autonomous entity triggers an API or updates a database record based on its own internal prompting, it exercises a level of programmatic agency that bypasses traditional access boundaries [iProov Non-Human Identity Community Journal]. 
 
-As we push to shift left and drive deeper automation into the enterprise, we encounter a similar set of hurdles to what we've seen with past process and automation improvements [DevSecRegOps: What Does It All Mean?]. Running these systems through shared human employee accounts breaks corporate audit trails, over-extends operational privileges, and blurs legal accountability [iProov Identity Deep Dive]. If we continue treating them as simple applications, we introduce severe identity gaps. Instead, we must begin treating them as a completely new class of non-human enterprise identity that requires its own distinct governance and operating model [NIST Cybersecurity Insights].
-
----
+As we push to shift left and drive deeper automation into the enterprise, we encounter a similar set of hurdles to what we've seen with past process and automation improvements [DevSecRegOps: What Does It All Mean?](https://medium.com/@kotzo1/devsecregops-what-does-it-all-mean-5a70704e53cf). Running these systems through shared human employee accounts breaks corporate audit trails, over-extends operational privileges, and blurs legal accountability. If we continue treating them as simple applications, we introduce severe identity gaps. Instead, we must begin treating them as a completely new class of non-human enterprise identity that requires its own distinct governance and operating model [NIST Cybersecurity Insights](https://www.nist.gov/blogs/cybersecurity-insights/back-future-why-agentic-ai-needs-strong-identity-foundation).
 
 ### Deterministic Guardrails Around Probabilistic Systems
 
-Gartner approaches this dynamic shift from a security perspective and recommends treating AI agents as untrusted non-human identities operating within deterministic guardrails [Gartner on Agent Governance]. While the terminology is different, I think both perspectives are describing the same organizational shift: AI agents are becoming a new category of actor within the enterprise. 
+Gartner approaches this dynamic shift from a security perspective and recommends treating AI agents as untrusted non-human identities operating within deterministic guardrails [Gartner on Agent Governance](https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure). While the terminology is different, I think both perspectives are describing the same organizational shift: AI agents are becoming a new category of actor within the enterprise. 
 
-What stood out to me in the Gartner analysis is the idea of placing deterministic guardrails around probabilistic systems. AI agents can reason, adapt, and determine their own execution paths, which is fundamentally different from traditional software. That raises an interesting question: should we think of these systems as applications, or as a new class of enterprise identity that requires its own governance and operating model?
+What stood out to me in the Gartner analysis is the idea of placing deterministic guardrails around probabilistic systems. AI agents can reason, adapt, and determine their own execution paths, which is fundamentally different from traditional software. That raises, what I think, is an interesting question: should we think of these systems as applications, or as a new class of enterprise identity that requires its own governance and operating model?
 
 With nearly half of security incidents tied to mistakes in human decision-making, introducing autonomous agents creates a new category of operational and security risk. Will every agent error become a security incident? Probably not. But some will. The challenge is less about eliminating mistakes and more about ensuring we have the right controls, oversight, and containment mechanisms when they occur. 
 
-To manage this risk surface effectively, we must move away from flat, uniform security blankets. A uniform control plane inevitably triggers two destructive outcomes: it either over-restricts simple agents and stalls organizational velocity, or it under-restricts advanced, high-autonomy agents and exposes critical data assets. Systemic resilience requires a model of proportional governance that scales controls directly to the agent's active execution boundaries [Gartner on Agent Governance, SAP Enterprise Blog]:
+To manage this risk surface effectively, we must move away from flat, uniform security blankets. A uniform control plane inevitably triggers two destructive outcomes: it either over-restricts simple agents and stalls organizational velocity, or it under-restricts advanced, high-autonomy agents and exposes critical data assets. Resilience requires a model of proportional governance that scales controls directly to the agent's active execution boundaries [Gartner on Agent Governance, SAP Enterprise Blog]:
 
 | Autonomy Level | Agent Role | Execution Boundary | Core Governance Mechanism |
 | :--- | :--- | :--- | :--- |
-| **Level 1: Observe** | Environmental monitoring | Read-only access | Standard IAM read permissions |
-| **Level 2: Advise** | Contextual recommendations | Read-only + Human prompt | Output verification filtering |
-| **Level 3: Approve** | Workflow execution | Human-in-the-loop gate | Cryptographic human authorization |
-| **Level 4: Autonomously Act** | Full self-execution | Deterministic guardrails | Real-time network interception & kill-switches |
-
----
+| **Observe** | Environmental monitoring | Read-only access | Standard IAM read permissions |
+| **Advise** | Contextual recommendations | Read-only + Human prompt | Output verification filtering |
+| **Approve** | Workflow execution | Human-in-the-loop gate | Cryptographic human authorization |
+| **Autonomously Act** | Full self-execution | Deterministic guardrails | Real-time network interception & kill-switches |
 
 ### Defusing the Lifecycle and Ownership Vacuum
 
@@ -39,19 +35,17 @@ To address this vacuum, we must establish a clear Agent Lifecycle Management fra
 
 Furthermore, cloud security research indicates that agentic systems are highly vulnerable to contextual privilege creep; an agent authorized to read a corporate calendar can autonomously decide to broadcast malicious event descriptions based on its interpretation of the surrounding data [The Non-Human Identity Governance Vacuum]. This means that lifecycles must include hard-coded, automated re-attestation gates to prune access scopes and enforce active, cryptographic kill switches.
 
-### Workforce Planning: From Cattle to Co-Workers
+### Workforce Planning: From Agent to Co-Workers
 
-This shift also forces us to rethink workforce planning and organizational design. We cannot view agents merely as tools to reduce headcount or treat them like ephemeral infrastructure components. In past architectural shifts, we moved from custom-built servers to highly automated, containerized deployments—the classic "cattle vs. pets vs. chickens vs. insects" philosophy [The Farm and Modern Infrastructure]. But while microservices are designed to be entirely immutable, disposable, and programmatic, AI agents function as adaptive, reasoning digital teammates [Exploring How Humans and AI Work Side-by-Side]. 
+This shift also forces us to rethink workforce planning and organizational design. We cannot view agents merely as tools to reduce headcount or treat them like ephemeral infrastructure components. In past architectural shifts, we moved from custom-built servers to highly automated, containerized deployments—the classic "cattle vs. pets vs. chickens vs. insects" philosophy [The Farm and Modern Infrastructure](https://medium.com/@kotzo1/the-farm-and-modern-infrastructure-777c5bebb092). But while application / systems / microservices are designed to be entirely immutable, disposable, and programmatic, AI agents function as adaptive, reasoning digital teammates [Exploring How Humans and AI Work Side-by-Side](https://medium.com/@kotzo1/exploring-how-humans-and-ai-work-side-by-side-cf98ebe8bb4a). 
 
 Workforce planning must transition from human substitution to human-agent orchestration.
 
 ![Siloed Workforce v Hybrid Orchestration](../images/SiloedWorkforceVHybridOrchestration.png)
 
-Managers of modern "agile" teams must lean heavily into updated ceremonies, stands, and retros to manage these hybrid lifecycles smoothly [The Engineer: Finding Balance]. Human leaders will spend less time tracking daily task execution and more time serving as prompt and context architects, defining behavioral boundaries for their agent cohorts and auditing operational data logs. 
+Managers of modern "agile" teams must lean heavily into updated ceremonies, stands, and retros to manage these hybrid lifecycles smoothly. Human leaders will spend less time tracking daily task execution and more time serving as prompt and context architects, defining behavioral boundaries for their agent cohorts and auditing operational data logs. 
 
-Concurrently, human specialists will pivot toward critical evaluation and exception handling, stepping in only when deterministic controls flag a deviation. This model creates a demand for completely new capability domains within the enterprise: AgentOps engineers to manage version control, Non-Human Identity officers to oversee credential lifecycles, and Cognitive QA testers to deliberately stress-test probabilistic systems against hallucination and privilege escalation loops before they reach production networks [Governing non-human identities].
-
----
+Concurrently, human specialists will pivot toward critical evaluation and exception handling, stepping in only when deterministic controls flag a deviation. This model creates a demand for completely new capability domains within the enterprise: AgentOps engineers to manage version control, Non-Human Identity officers to oversee credential lifecycles, and Cognitive QA testers to deliberately stress-test probabilistic systems against hallucination and privilege escalation loops before they reach production networks.[Governing non-human identities: How to secure the new digital workforce](https://www.nccgroup.com/governing-non-human-identities-how-to-secure-the-new-digital-workforce/)
 
 ### The Runtime Control Plane: Enforcing API Mediation
 
@@ -133,12 +127,13 @@ Ultimately, we are not just discussing a new technology; we are discussing a new
 ### Enterprise Governance & Security References
 
 * **Foundational Perspectives:** *[Digital Transformation Journey](https://medium.com/@kotzo1/digital-transformation-journey-blog-1-15256dcf7c78)*, *[Exploring How Humans and AI Work Side-by-Side](https://medium.com/@kotzo1/exploring-how-humans-and-ai-work-side-by-side-cf98ebe8bb4a)*, *[The Engineer: Finding Balance](https://medium.com/@kotzo1/the-engineer-finding-balance-e73ffb058418)*, *[DevSecRegOps: What Does It All Mean?](https://medium.com/@kotzo1/devsecregops-what-does-it-all-mean-5a70704e53cf)*, and *[The Farm and Modern Infrastructure](https://medium.com/@kotzo1/the-farm-and-modern-infrastructure-777c5bebb092)*. Nick Kotzamanis, Medium Archive.
-* **Gartner Analysis:** *[Gartner Says Applying Uniform Governance Across AI Agents Will Lead to Enterprise AI Agent Failure](https://gartner.com)*. Gartner, Inc.
-* **NIST Identity Standards:** *[Back to the Future: Why Agentic AI Needs a Strong Identity Foundation](https://nist.gov)*. National Institute of Standards and Technology (NIST) Cybersecurity Insights.
+* **Gartner Analysis:** *[Gartner: Applying Uniform Governance Across AI Agents Will Lead to Enterprise AI Agent Failure]([https://gartner.com](https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure))*. Gartner, Inc.
+* **NIST Identity Standards:** *[Back to the Future: Why Agentic AI Needs a Strong Identity Foundation]([https://nist.gov](https://www.nist.gov/blogs/cybersecurity-insights/back-future-why-agentic-ai-needs-strong-identity-foundation))*. National Institute of Standards and Technology (NIST) Cybersecurity Insights.
 * **Cloud Security Alliance Framework:** *[The Non-Human Identity Governance Vacuum](https://cloudsecurityalliance.org)*. Cloud Security Alliance (CSA) Research.
 * **Enterprise Application & Risk Strategy:** *[Why AI Agent Governance is Essential](https://sap.com)*. SAP Enterprise Architecture Insights.
 * **Adaptive Security Architectures:** *[The Future of AI Security: The Right Architecture for Agents](https://okta.com)*. Okta Engineering.
-* **Global Cyber Security Consortia Insights:** *[Governing non-human identities: How to secure the new digital workforce](https://nccgroup.com)*. NCC Group Center for Cyber Security.
+* **Global Cyber Security Consortia Insights:** *[Governing non-human identities: How to secure the new digital workforce](https://www.nccgroup.com/governing-non-human-identities-how-to-secure-the-new-digital-workforce/)*. NCC Group Center for Cyber Security.
+* 
 * **Identity Community Whitepapers:** *[AI agent identity gaps: what IAM teams need to fix now](https://nhimg.org)* & *[AI Agent Identity: Why Agents Need Their Own, Not Yours](https://iproov.com)*. iProov Identity Community Group.
 * **API Execution Control Documentation:** *[How to Manage Your API Policies with OPA](https://konghq.com)*. Kong Gateway Open Policy Agent Integration Portal.
 * **Network Visibility Metrics:** *[Monitor AI Usage & Behavior Architecture](https://extrahop.com)* (ExtraHop Network Defense Framework) & *[Darktrace Redefines NDR with Agentic Threat Investigation Architecture](https://darktrace.com)* (Darktrace Self-Learning Network AI).
