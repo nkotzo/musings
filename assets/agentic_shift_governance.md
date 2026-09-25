@@ -53,6 +53,41 @@ I think Gartner is directionally correct in recommending network-level governanc
 
 ![Runtime Governance Control](../images/RuntimeControl.png)
 
+```rego
+package enterprise.agent.governance
+
+default allow = false
+
+# Allow execution only if all deterministic criteria evaluate to true
+allow {
+    # 1. Enforce actor classification as a validated Non-Human Identity (NHI)
+    input.identity.type == "non_human_agent"
+    
+    # 2. Lifecycle containment: Prevent orphaned agency if human sponsor is deactivated
+    human_sponsor_active(input.identity.sponsor_id)
+    
+    # 3. Execution boundary: Enforce monetary blast-radius limits
+    is_safe_transaction_amount
+}
+
+# Lookup human sponsor active status from synchronized enterprise directory data
+human_sponsor_active(sponsor_id) {
+    data.enterprise_directory.employees[sponsor_id].active == true
+}
+
+# Enforce autonomous spend ceiling
+is_safe_transaction_amount {
+    input.http_method == "POST"
+    input.path == ["api", "v1", "payments"]
+    input.body.amount <= 10000
+}
+
+# Optional explicit denial reason for audit logging and gateway HTTP 403 response
+reason = "Action blocked: Agent exceeded autonomous monetary limit or sponsor identity is inactive." {
+    not allow
+}
+```
+
 #### Runtime Execution Interception Flow
 
 ![Execution Interception Flow](../images/ExecutionFlow.png)
