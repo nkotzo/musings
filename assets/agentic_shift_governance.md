@@ -1,4 +1,4 @@
-# Architecting Governance for the New Enterprise Actor
+# Governance for the New Enterprise AI Actor
 
 Beyond the immediate technology implications of this AI wave, I find myself thinking about how AI agents impact organizational structures, workforce planning, governance, security, and the overall human experience at work. One of the ideas I've been exploring recently is that AI agents are beginning to move beyond being simple tools. They are increasingly becoming digital teammates that participate in workflows, make decisions, perform work, and influence outcomes. 
 
@@ -51,23 +51,7 @@ To me, this is where traditional "if-then-else" controls, signatures, and static
 
 I think Gartner is directionally correct in recommending network-level governance and deterministic controls around these systems. Leveraging Kong, [OPA/Rego](https://www.openpolicyagent.org/), and Policy-as-Code provides part of that control plane [Kong Gateway's OPA Integration](https://konghq.com/blog/engineering/how-to-manage-your-api-policies-with-opa-open-policy-agent). Reverse proxy, API mediation, protocol translation, and policy enforcement capabilities give us a practical mechanism to intercept and govern agent behavior before actions are executed.
 
-```text
-┌──────────────┐     API Tool Call      ┌──────────────┐    Enforce Policy   ┌─────────────────────┐
-│   Probabilistic │ ───────────────────> │  Kong Gateway │ ─────────────────> │ Open Policy Agent   │
-│   AI Agent   │   (Intercept Point)  │  (OPA Plugin) │                    │   (Rego Engine)     │
-└──────────────┘                      └──────────────┘                    └─────────────────────┘
-                                             │                                       │
-                                     Allow / Deny Action  5000
-    agent_action.human_approval_signature == true
-    agent_action.approved_by_role == "finance_manager"
-}
-
-# 3. Enforce a deterministic safety boundary on bulk data extraction
-allow {
-    agent_action.type == "database_query"
-    agent_action.records_requested <= 100
-}
-```
+![Runtime Governance Control](../images/RunimeControl.png)
 
 #### Runtime Execution Interception Flow
 
