@@ -92,45 +92,6 @@ reason = "Action blocked: Agent exceeded autonomous monetary limit or sponsor id
 
 ![Execution Interception Flow](../images/ExecutionFlow.png)
 
-```text
-   +-----------------------+
-
-   |  AI Agent (NHI Token) |
-   +-----------------------+
-               |
-               | 1. Dispatches API Tool Call
-               v
-   +-----------------------+
-
-   |   Kong Proxy Gateway  | <---+
-   +-----------------------+     |
-
-               |                 |
-               | 2. Passes Payload Data
-               v                 |
-   +-----------------------+     | 4. Revokes Denied Actions (HTTP 403)
-
-   |   Open Policy Agent   |     |
-   +-----------------------+     |
-
-               |                 |
-               | 3. Evaluates Rego Logic Engine
-               +-----------------+
-               |
-               | (If Policy Evaluates ALLOWED)
-               v
-   +-----------------------+
-
-   | Core Database / ERP   | ───> 5. Mirrored East-West Traffic Flow
-   +-----------------------+      (Passive Behavioral Out-of-Band Analysis)
-                                        |
-                                        v
-                              +-----------------------+
-
-                              | Darktrace / ExtraHop  |
-                              +-----------------------+
-```
-
 ### Detecting the Unpredictable: The Role of NDR
 
 That said, I suspect governance and prevention controls alone won't be enough. We'll also need capabilities that can identify emergent behavior and patterns we did not anticipate when the policies were written. 
