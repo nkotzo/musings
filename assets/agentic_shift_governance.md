@@ -40,8 +40,6 @@ Furthermore, cloud security research indicates that agentic systems are highly v
 ### The Era of Hybrid Workforce Orchestration
 Establishing these lifecycle controls and governance frameworks is only feasible if the right human roles exist inside the organization to design, enforce, and audit them. That is what makes workforce planning inseparable from agent governance.  Workforce planning must transition from tracking simple human headcount to orchestrating complex human-agent workflows. As autonomous AI systems move from simple software tools to digital coworkers operating directly alongside employees, organizations face an immediate demand for entirely new structural roles within the modern enterprise layout—specifically: AgentOps Engineers, Non-Human Identity Officers, and Cognitive QA Testers. [ [AI agents are joining your workforce](https://thenextweb.com/news/ai-agents-workforce-not-ready-guy-couillard) ]
 
-We cannot view agents merely as tools to reduce headcount or treat them like ephemeral infrastructure components. In past architectural shifts, we moved from custom-built servers to highly automated, containerized deployments—the classic ["cattle vs. pets vs. chickens vs. insects"](https://medium.com/@kotzo1/the-farm-and-modern-infrastructure-777c5bebb092) philosophy. But while application / systems / microservices are designed to be entirely immutable, disposable, and programmatic, AI agents function as adaptive, [reasoning digital teammates](https://medium.com/@kotzo1/exploring-how-humans-and-ai-work-side-by-side-cf98ebe8bb4a). 
-
 Workforce planning must transition from human substitution to human-agent orchestration. Human leaders will spend less time tracking daily task execution and more time serving as prompt and context architects, defining behavioral boundaries for their agent cohorts and auditing operational data logs. 
 
 ![Siloed Workforce v Hybrid Orchestration](../images/SiloedWorkforceVHybridOrchestration.png)
@@ -110,4 +108,13 @@ In practice, this means NDR catches a different class of risk entirely. An agent
 This is where I see value in platforms such as [ExtraHop's AI defence framework](https://www.extrahop.com/blog/when-ai-agents-go-rogue-the-network-is-your-last-line-of-defense) or [Darktrace's self-learning AI](https://www.darktrace.com/blog/how-ai-is-transforming-cybersecurity-practices), not as a replacement for gateways, IDS, EDR, or traditional monitoring, but as a complementary layer that covers the gap between what you governed and what actually happened. Your threat model will always outpace your policy library. NDR is how you close that gap.
 
 ###  In Summary
-Ultimately, we are not just discussing a new technology; we are discussing a new actor in the ecosystem. Managing this agentic shift successfully requires us to prioritize comprehensive, network-level architecture over simple tooling. By treating agents as distinct non-human identities, instituting proactive API mediation, and deploying out-of-band behavioral tracking, we can scale this digital workforce safely and resiliently.
+AI agents are not simply faster software. They are a new class of enterprise actor, one that reasons, adapts, and executes autonomously across systems that were never designed to govern them. That distinction has real consequences for how we think about identity, security, workforce design, and operational risk.
+
+The governance response has to match that reality. Proportional controls tied to autonomy level prevent the twin failure modes of over-restriction and under-restriction. A Policy-as-Code control plane gives the humans responsible for these systems a practical, auditable mechanism to enforce behavioral boundaries in real time, and network-level detection provides coverage for the emergent behaviors that no policy library fully anticipates.
+
+The workforce implications are equally concrete. AgentOps engineers, Non-Human Identity officers, and Cognitive QA testers are not aspirational job titles. They are the functional roles required to operate this governance model at scale.
+
+None of this eliminates risk. Agents will make mistakes, policies will have gaps, and detection will sometimes be late. The goal is not a zero-failure environment. It is a resilient one, where controls are proportional, accountability is traceable, and the organization can detect, contain, and recover when something goes wrong.
+
+We are not just adopting new tooling. We are redesigning how work gets done, who does it, and how it gets governed. The organizations that treat that seriously now will be better positioned than those that discover it later under pressure.
+
