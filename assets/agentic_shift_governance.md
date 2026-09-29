@@ -96,6 +96,7 @@ That said, I suspect governance and prevention controls alone won't be enough. W
 
 This is where I see value in Network Detection and Response (NDR) platforms such as [ExtraHop's AI defence framework](https://www.extrahop.com/blog/when-ai-agents-go-rogue-the-network-is-your-last-line-of-defense) or [Darktrace's self learning AI](https://www.darktrace.com/blog/how-ai-is-transforming-cybersecurity-practices). Not as a replacement for gateways, Intrusion Detection systems (IDS), Endpoint Detection Response (EDR), or traditional monitoring, but as a complementary layer that helps identify anomalous agent behavior, unexpected communication paths, privilege misuse, lateral movement, or entirely new patterns that deterministic controls may miss.
 
+###  In Summary
 Ultimately, we are not just discussing a new technology; we are discussing a new actor in the ecosystem. Managing this agentic shift successfully requires us to prioritize comprehensive, network-level architecture over simple tooling. By treating agents as distinct non-human identities, instituting proactive API mediation, and deploying out-of-band behavioral tracking, we can scale this digital workforce safely and resiliently.
 
 
