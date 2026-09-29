@@ -60,7 +60,7 @@ default allow = false
 
 # Allow execution only if all deterministic criteria evaluate to true
 allow {
-    # 1. Enforce actor classification as a validated Non-Human Identity (NHI)
+    # 1. Enforce actor classification as a validated Non-Human Identity (NHI) input.
     input.identity.type == "non_human_agent"
     
     # 2. Lifecycle containment: Prevent orphaned agency if human sponsor is deactivated
