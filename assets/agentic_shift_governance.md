@@ -2,7 +2,7 @@
 
 Beyond the immediate technology implications of this AI wave, I find myself thinking about how AI agents impact organizational structures, workforce planning, governance, security, and the overall human experience at work. One of the ideas I've been exploring recently is that AI agents are beginning to move beyond being simple tools. They are increasingly becoming digital teammates that participate in workflows, make decisions, perform work, and influence outcomes. 
 
-Historically, enterprise architecture and corporate security models have operated on a clean, structure with focuse on governing people, applications, and infrastructure. People possessed identities; applications consisted of static, predictable code; infrastructure formed the network boundaries connecting them. 
+Historically, enterprise architecture and corporate security models have operated on a clean structure with focus on governing people, applications, and infrastructure. People possessed identities; applications consisted of static, predictable code; infrastructure formed the network boundaries connecting them. 
 
 ![Traditional IT Governance v Agentic Reality](../images/AgenticReality.png)
 
