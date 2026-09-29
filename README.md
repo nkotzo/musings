@@ -23,3 +23,5 @@ you’re welcome here.
 [Non-Human Workforce](assets/NonHumanWorkforce.md)
 
 [Non-Human Workforce Part II](assets/NonHumanWorkforcePartII.md)
+
+[Governance for the New Enterprise AI Actor](assets/agentic_shift_governance.md)
