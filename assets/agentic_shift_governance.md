@@ -49,9 +49,9 @@ Concurrently, human specialists will pivot toward critical evaluation and except
 
 To me, this is where traditional "if-then-else" controls, signatures, and static rule engines start to show their limitations. Those approaches work well when systems behave predictably. Agentic systems, by design, do not. As these systems evolve, so do the potential error, attack, and operational risk surfaces. 
 
-I think Gartner is directionally correct in recommending network-level governance and deterministic controls around these systems. Leveraging [Kong's gateway](https://www.extrahop.com/blog/when-ai-agents-go-rogue-the-network-is-your-last-line-of-defense) and [OPA/Rego](https://www.openpolicyagent.org/), to provide Policy-as-Code as part of that control plane. Reverse proxy, API mediation, protocol translation, and policy enforcement capabilities give us a practical mechanism to intercept and govern agent behavior before actions are executed.
+I think Gartner is directionally correct in recommending network-level governance and deterministic controls around these systems. Leveraging [Kong's gateway](https://www.extrahop.com/blog/when-ai-agents-go-rogue-the-network-is-your-last-line-of-defense) and [OPA/Rego](https://www.openpolicyagent.org/), to provide Policy-as-Code as part of that control plane. Reverse proxy, API mediation, protocol translation, and policy enforcement capabilities give us a practical mechanism to intercept and govern agent behavior before actions are executed.  Here is some sample 'rego' to execution flow:
 
-![Runtime Governance Control](../images/RuntimeControl.png)
+[//]: # "commenting this out for now -- ![Runtime Governance Control](../images/RuntimeControl.png)"
 
 ```rego
 package enterprise.agent.governance
@@ -87,8 +87,6 @@ reason = "Action blocked: Agent exceeded autonomous monetary limit or sponsor id
     not allow
 }
 ```
-
-#### Runtime Execution Interception Flow
 
 ![Execution Interception Flow](../images/ExecutionFlow.png)
 
