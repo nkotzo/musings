@@ -26,6 +26,7 @@ To manage this risk surface effectively, we must move away from flat, uniform se
 | **Advise** | Contextual recommendations | Read-only + Human prompt | Output verification filtering |
 | **Approve** | Workflow execution | Human-in-the-loop gate | Cryptographic human authorization |
 | **Autonomously Act** | Full self-execution | Deterministic guardrails | Real-time network interception & kill-switches |
+
  [ [Gartner on Agent Governance](https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure) ] 
 
 Tiered controls solve the question of how much governance each agent requires. They do not, on their own, solve the question of who remains responsible for maintaining those controls over time, and that gap creates a risk of its own.
