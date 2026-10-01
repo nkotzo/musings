@@ -1,4 +1,4 @@
-# Governance for the New Enterprise AI Actor
+# Deterministic Controls for a Probabilistic Workforce
 
 Beyond the immediate technology implications of this AI wave, AI agents sit between people, applications, and infrastructure, and existing governance models weren't built for that.  One of the ideas I've been exploring recently is that AI agents are beginning to move beyond being simple tools. They are increasingly becoming digital teammates that participate in workflows, make decisions, perform work, and influence outcomes. 
 
