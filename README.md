@@ -24,4 +24,4 @@ you’re welcome here.
 
 [Non-Human Workforce Part II](assets/NonHumanWorkforcePartII.md)
 
-[Governance for the New Enterprise AI Actor](assets/agentic_shift_governance.md)
+[Deterministic Controls for a Probabilistic Workforce](assets/agentic_shift_governance.md)
