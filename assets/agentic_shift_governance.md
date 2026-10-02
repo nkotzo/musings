@@ -70,12 +70,6 @@ import rego.v1
 
 default allow := false
 
-package enterprise.agent.governance
-
-import rego.v1
-
-default allow := false
-
 allow if {
    input.identity.type == "non_human_agent"
    human_sponsor_active(input.identity.sponsor_id)
