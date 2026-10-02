@@ -8,11 +8,11 @@ AI agents seem to sit somewhere in between all three, which is why I think the a
 
 ![Traditional IT Governance v Agentic Reality](../images/AgenticReality.png)
 
-As we push to shift left and drive deeper automation into the enterprise, we encounter a similar set of hurdles to what we've seen with past process and automation improvements. [ [DevSecRegOps: What Does It All Mean?](https://medium.com/@kotzo1/devsecregops-what-does-it-all-mean-5a70704e53cf) ] Running these systems through shared human employee accounts breaks corporate audit trails, over-extends operational privileges, and blurs legal accountability. If we continue treating them as simple applications, we introduce severe identity gaps. Instead, we must begin treating them as a completely new class of non-human enterprise identity that requires its own distinct governance and operating model, a position [NIST has also begun to formalize.](https://www.nist.gov/blogs/cybersecurity-insights/back-future-why-agentic-ai-needs-strong-identity-foundation)
+As we push to shift left and drive deeper automation into the enterprise, we encounter a similar set of hurdles to what we've seen with past process and automation improvements. [ [DevSecRegOps: What Does It All Mean?](https://medium.com/@kotzo1/devsecregops-what-does-it-all-mean-5a70704e53cf) ] Running these systems through shared human employee accounts breaks corporate audit trails, over-extends operational privileges, and blurs legal accountability. If we continue treating them as simple applications, we introduce severe identity gaps. Instead, we must begin treating them as a completely new class of non-human enterprise identity that requires its own distinct governance and operating model, a position [NIST has also begun to discuss.](https://www.nist.gov/blogs/cybersecurity-insights/back-future-why-agentic-ai-needs-strong-identity-foundation)
 
 ### Deterministic Guardrails Around Probabilistic Systems
 
-Gartner approaches this shift and recommends treating AI agents as untrusted non-human identities operating within deterministic guardrails. [ [Gartner on Agent Governance](https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure) ]  While our terminology is different, I think both perspectives are describing the same organizational shift: AI agents are becoming a new category of actor within the enterprise. 
+Gartner approaches this shift and recommends treating AI agents as untrusted non-human identities operating within deterministic guardrails. [ [Gartner: EA-Led Guardrails](https://www.gartner.com/document-reader/document/8370349?ref=pubsite) ]  While our terminology is different, I think both perspectives are describing the same organizational shift: AI agents are becoming a new category of actor within the enterprise. 
 
 What stood out to me in the Gartner analysis is the idea of placing deterministic guardrails around probabilistic systems. AI agents can reason, adapt, and determine their own execution paths, which is fundamentally different from traditional software. That raises, what I think, is an interesting question: should we think of these systems as applications, or as a new class of enterprise identity that requires its own governance and operating model?
 
@@ -59,42 +59,42 @@ These roles are only as effective as the technical infrastructure they operate a
 ### API Mediation & Policy-as-Code
 Because autonomous AI systems are inherently probabilistic, traditional static security rulebooks fall short. Those legacy approaches work well when software behavior is completely deterministic, but they fail to govern systems capable of dynamic reasoning and unpredictable paths. We must enforce deterministic controls around these probabilistic systems.  To me, this is where traditional "if-then-else" controls, signatures, and static rule engines start to show their limitations. Agentic systems, by design, do not. As these systems evolve, so do the potential error, attack, and operational risk surfaces. 
 
-I think Gartner is directionally correct in recommending to leverage API gateways like [Kong](https://konghq.com/products/kong-gateway) alongside [Open Policy Agent (OPA)](https://www.openpolicyagent.org/) to provide a Policy-as-Code control plane allowing organizations to intercept autonomous actions in real time, evaluate their intent against active corporate policies, and immediately block compliance violations.  As an example, below, is a Rego policy that acts as a real-time gateway guardrail. It dynamically enforces financial transaction ceilings while ensuring the agent's human owner is still actively employed by the company:
+I think Gartner is directionally correct in recommending to leverage API gateways for example [Kong](https://konghq.com/products/kong-gateway) alongside [Open Policy Agent (OPA)](https://www.openpolicyagent.org/) to provide a Policy-as-Code control plane allowing organizations to intercept autonomous actions in real time, evaluate their intent against active corporate policies, and immediately block compliance violations.  As an example, below, is a Rego policy that acts as a real-time gateway guardrail. It dynamically enforces financial transaction ceilings while ensuring the agent's human owner is still actively employed by the company:
 
 [//]: # "commenting this out for now -- ![Runtime Governance Control](../images/RuntimeControl.png)"
 
 ```rego
 package enterprise.agent.governance
 
-default allow = false
+import rego.v1
 
-# Allow execution only if all deterministic criteria evaluate to true
-allow {
-    # 1. Enforce actor classification as a validated Non-Human Identity (NHI) input.
-    input.identity.type == "non_human_agent"
-    
-    # 2. Lifecycle containment: Prevent orphaned agency if human sponsor is deactivated
-    human_sponsor_active(input.identity.sponsor_id)
-    
-    # 3. Execution boundary: Enforce monetary blast-radius limits
-    is_safe_transaction_amount
+default allow := false
+
+package enterprise.agent.governance
+
+import rego.v1
+
+default allow := false
+
+allow if {
+   input.identity.type == "non_human_agent"
+   human_sponsor_active(input.identity.sponsor_id)
+   within_spend_limit
 }
 
-# Lookup human sponsor active status from synchronized enterprise directory data
-human_sponsor_active(sponsor_id) {
-    data.enterprise_directory.employees[sponsor_id].active == true
+human_sponsor_active(sponsor_id) if {
+   data.enterprise_directory.employees[sponsor_id].active == true
 }
 
-# Enforce autonomous spend ceiling
-is_safe_transaction_amount {
-    input.http_method == "POST"
-    input.path == ["api", "v1", "payments"]
-    input.body.amount <= 10000
+payment_request if {
+   input.http_method == "POST"
+   input.path == ["api", "v1", "payments"]
 }
 
-# Optional explicit denial reason for audit logging and gateway HTTP 403 response
-reason = "Action blocked: Agent exceeded autonomous monetary limit or sponsor identity is inactive." {
-    not allow
+within_spend_limit if not payment_request
+within_spend_limit if {
+   payment_request
+   input.body.amount <= 10000
 }
 ```
 
